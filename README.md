@@ -5,7 +5,7 @@ These are the AI notebook topics I've currectly uploaded
 - Decision Tree
 - Deep Learning
   - Keras (Sequential)
+  - RNN - LSTM
 - Machine Learning in PySpark
 - Naive Bayes
-- RNN - LSTM
 - Pycaret (library that automates machine learning workflows)
