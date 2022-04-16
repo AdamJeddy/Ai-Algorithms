@@ -8,4 +8,4 @@ These are the AI notebook topics I've currectly uploaded
   - RNN - LSTM
 - Machine Learning in PySpark
 - Naive Bayes
-- Pycaret (library that automates machine learning workflows)
+- PyCaret (library that automates machine learning workflows)
