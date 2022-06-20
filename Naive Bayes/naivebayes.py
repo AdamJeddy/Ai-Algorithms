@@ -14,6 +14,7 @@ from sklearn.naive_bayes import BernoulliNB
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
 
 df = pd.read_csv('adult.csv', header=None)
 
@@ -79,8 +80,6 @@ Exercise 5
 Use category encoder to encode each categorical column. 
 """
 
-import category_encoders as ce
-
 # I do this during the spliting phase, up in Exercise 4
 
 """#
@@ -88,9 +87,6 @@ Exercise 6
 
 Create and train your model.
 """
-
-# import it if you haven't
-from sklearn.naive_bayes import GaussianNB
 
 # instantiate the model
 gnb = GaussianNB()
@@ -140,9 +136,6 @@ df2['income'].value_counts()
 
 x = df2.drop(columns=['income']) # All columns besides the first one
 y = df2.drop(df2.loc[:, 'age':'native_country'].columns, axis = 1) # Only the first column
-
-# Encode before splitting
-import category_encoders as ce
 ce_one_hot = ce.OneHotEncoder()
 x = ce.OneHotEncoder().fit_transform(x, y)
 y = ce.OrdinalEncoder().fit_transform(y, y)
@@ -166,8 +159,6 @@ y_test.value_counts().head(1) / len(y_test)
 Another method
 **Decision Tree Doesn't help improve the accuracy**
 """
-
-from sklearn.tree import DecisionTreeClassifier
 
 dtree = DecisionTreeClassifier()
 dtree.fit(X_train, y_train)

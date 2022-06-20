@@ -76,6 +76,7 @@ x = np.array(x);
 y = np.array(y);
 
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3)
 
 x_train = x_train/255
@@ -149,8 +150,6 @@ y_pred = np.argmax(probability_model.predict(x_test),axis=1)
 y_pred
 
 y_test
-
-from sklearn.metrics import confusion_matrix
 cm=confusion_matrix(y_test,y_pred)
 cm
 
