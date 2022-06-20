@@ -12,7 +12,7 @@ Use the following libraries below. No need for normalization.
 """
 
 import pandas as pd
-from sklearn.model_selection import train_test_split, train_test_split
+from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
