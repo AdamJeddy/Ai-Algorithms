@@ -9,11 +9,12 @@ Today's dataset contains information about adults with the target value of incom
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from sklearn.naive_bayes import GaussianNB
+from sklearn.naive_bayes import GaussianNB, GaussianNB
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
 
 df = pd.read_csv('adult.csv', header=None)
 
@@ -89,9 +90,6 @@ Exercise 6
 Create and train your model.
 """
 
-# import it if you haven't
-from sklearn.naive_bayes import GaussianNB
-
 # instantiate the model
 gnb = GaussianNB()
 
@@ -166,8 +164,6 @@ y_test.value_counts().head(1) / len(y_test)
 Another method
 **Decision Tree Doesn't help improve the accuracy**
 """
-
-from sklearn.tree import DecisionTreeClassifier
 
 dtree = DecisionTreeClassifier()
 dtree.fit(X_train, y_train)
