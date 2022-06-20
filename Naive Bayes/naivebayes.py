@@ -8,11 +8,8 @@ Today's dataset contains information about adults with the target value of incom
 
 import numpy as np
 import pandas as pd
-import seaborn as sns
 from sklearn.naive_bayes import GaussianNB
-from sklearn.naive_bayes import BernoulliNB
 from sklearn.metrics import accuracy_score
-from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 
