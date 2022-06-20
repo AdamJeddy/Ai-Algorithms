@@ -6,15 +6,12 @@ Keras - Sequential - Weather
 import tensorflow as tf
 import numpy as np
 import cv2
-import os
 import PIL.Image as Image
 import matplotlib.pylab as plt
 import tensorflow_hub as hub
 
 from sklearn.model_selection import train_test_split
-from tensorflow import keras
 from tensorflow.keras import layers
-from tensorflow.keras.models import Sequential
 
 
 classifier = tf.keras.Sequential([

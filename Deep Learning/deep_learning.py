@@ -10,8 +10,6 @@ A key advantage of deep learning networks is that they often continue to improve
 ## Exercise 1: Design simple classifiers for iris dataset
 Use the following libraries below. No need for normalization.
 """
-
-import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
@@ -21,13 +19,7 @@ from sklearn.svm import SVC
 from sklearn.naive_bayes import GaussianNB
 
 from sklearn.metrics import accuracy_score
-from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import classification_report
 from sklearn import datasets
-from sklearn.datasets import load_iris
-
-import tensorflow as tf
 
 iris = datasets.load_iris()
 cols_name = iris.feature_names
@@ -134,7 +126,6 @@ Now design a neural network to classify the iris flowers.
 """
 
 from tensorflow.keras.optimizers import Adam
-import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense
 

@@ -6,7 +6,6 @@ Keras - Sequential - Animals
 import tensorflow as tf
 import numpy as np 
 import cv2 
-import os 
 import PIL.Image as Image
 import matplotlib.pylab as plt 
 import tensorflow_hub as hub
@@ -83,10 +82,7 @@ x_train = x_train/255
 x_test= x_test/255
 
 model = tf.keras.models.Sequential()
-
-from tensorflow import keras
 from tensorflow.keras import layers
-from tensorflow.keras.models import Sequential
 
 model.add(layers.Conv2D(32,(3,3), activation='relu', input_shape=(224,224,3)))
 model.add(layers.MaxPooling2D((2,2)))

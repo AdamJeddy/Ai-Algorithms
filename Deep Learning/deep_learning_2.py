@@ -21,13 +21,7 @@ from sklearn.svm import SVC
 from sklearn.naive_bayes import GaussianNB
 
 from sklearn.metrics import accuracy_score
-from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import classification_report
 from sklearn import datasets
-from sklearn.datasets import load_iris
-
-import tensorflow as tf
 
 df = pd.read_csv('data.data')
 X = df.drop('g', axis=1)
@@ -140,7 +134,6 @@ Now design a neural network to classify the iris flowers.
 """
 
 from tensorflow.keras.optimizers import Adam
-import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense
 

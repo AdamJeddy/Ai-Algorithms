@@ -9,9 +9,6 @@ https://archive.ics.uci.edu/ml/datasets/Mushroom
 ### built-in functions and attributes 
 Make use of the function imported below.
 """
-
-# import numpy
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
