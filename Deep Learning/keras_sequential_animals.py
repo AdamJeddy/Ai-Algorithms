@@ -71,8 +71,8 @@ for animal_image, images in animal_img_dict.items():
         x.append(resized_img)
         y.append(animal_label_dict[animal_image])
 
-x = np.array(x);
-y = np.array(y);
+x = np.array(x)
+y = np.array(y)
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
