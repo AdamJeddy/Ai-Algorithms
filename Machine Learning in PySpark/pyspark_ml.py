@@ -70,7 +70,7 @@ http://spark.apache.org/docs/latest/ml-features#onehotencoder
 #new 
 
 catCols = [x for (x, dataType) in df2.dtypes if dataType == "string"]
-numCols = [ x for (x, dataType) in df2.dtypes if ((dataType == "int") & (x != "Purchased")) ]
+numCols = [ x for (x, dataType) in df2.dtypes if (dataType == "int") & (x != "Purchased") ]
 print(numCols)
 print(catCols)
 
