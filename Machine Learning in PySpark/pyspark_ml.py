@@ -216,5 +216,5 @@ truePositiveRate = Summary.weightedTruePositiveRate
 fMeasure = Summary.weightedFMeasure()
 precision = Summary.weightedPrecision
 recall = Summary.weightedRecall
-print("Accuracy: %s \nPrecision: %s\nRecall: %s\n\nFalse Positive Rate: %s\nTrue Positive Rate: %s\nF-measure: %s"
+print("Accuracy: %s \nPrecision: %s\nRecall: %s\n\nFalse Positive Rate: %s\nTrue Positive Rate: %s\nF-measure: %s")
 #       % (accuracy, precision, recall, falsePositiveRate, truePositiveRate, fMeasure))
