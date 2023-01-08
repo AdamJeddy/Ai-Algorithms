@@ -10,7 +10,6 @@ The dataset used can be found on https://github.com/sam16tyagi/Machine-Learning-
 
 from pyspark.sql import SparkSession
 import pyspark.sql.functions as F
-import pyspark.sql.types as T
 
 spark = SparkSession.builder.getOrCreate()
 
@@ -142,9 +141,6 @@ stages = [string_indexer[0], one_hot_encoder[0], vector_assembler]
 
 stages
 
-import os
-from os.path import isfile, join
-
 # Commented out IPython magic to ensure Python compatibility.
 # %%time
 # from pyspark.ml import Pipeline
@@ -180,8 +176,6 @@ temp = pp_df.select("Age", "EstimatedSalary", "Gender_OneHotEncoder", "VectorAss
 temp.show(20)
 
 """### Logistic Regression"""
-
-from pyspark.ml.classification import LogisticRegression
 
 """
 Exercise 6
