@@ -52,8 +52,8 @@ for map_image, images in map_img_dict.items():
         x.append(resized_img)
         y.append(map_label_dict[map_image])
 
-x = np.array(x);
-y = np.array(y);
+x = np.array(x)
+y = np.array(y)
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3)
 
