@@ -2,8 +2,8 @@
 """
 Emirates NBD Workshop
 """
-
-pip install pycaret
+# For Installing PyCaret
+#pip install pycaret
 
 from pycaret.utils import enable_colab
 
