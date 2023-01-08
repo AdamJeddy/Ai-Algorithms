@@ -6,7 +6,6 @@ Keras - Sequential - Weather
 import tensorflow as tf
 import numpy as np
 import cv2
-import PIL.Image as Image
 import matplotlib.pylab as plt
 import tensorflow_hub as hub
 

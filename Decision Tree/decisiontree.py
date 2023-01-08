@@ -10,7 +10,6 @@ https://archive.ics.uci.edu/ml/datasets/Mushroom
 Make use of the function imported below.
 """
 import pandas as pd
-import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import LabelEncoder
 from sklearn.tree import DecisionTreeClassifier
