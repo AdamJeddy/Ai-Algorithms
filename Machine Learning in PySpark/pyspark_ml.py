@@ -122,7 +122,7 @@ http://spark.apache.org/docs/latest/ml-features#vectorassembler
 
 from pyspark.ml.feature import VectorAssembler
 
-assemblerInput = [x for x in numCols]
+assemblerInput = list(numCols)
 assemblerInput += [f"{x}_OneHotEncoder" for x in catCols]
 
 assemblerInput
