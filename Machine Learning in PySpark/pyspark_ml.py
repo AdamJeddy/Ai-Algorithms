@@ -177,6 +177,8 @@ temp.show(20)
 
 """### Logistic Regression"""
 
+# from pyspark.ml.classification import LogisticRegression
+
 """
 Exercise 6
 
